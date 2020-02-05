@@ -8,10 +8,7 @@ const server = express();
 const users = ['Magno', 'Bruno', 'Robson', 'Camile', 'Ávila'];
 
 server.get('/users/:index', (req, res) => {
-  //const nome = req.query.nome;
-  //const id = req.params.id;
   const { index } = req.params;
-  //return res.send('Hello World');
   return res.json(users[index]);
 });
 
